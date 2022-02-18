@@ -6,19 +6,21 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 
+from config import database_infos
+
 def send_email():
     #Setar o Servidor SMTP
     host = "smtp.gmail.com"
     port = "587"
     login = "emailenvio@email.com"
-    senha = "senha"
+    password = "password"
     destino = "emaildestino@email.com"
 
     #Dando start no servidor 
     server = smtplib.SMTP(host,port)
     server.ehlo()
     server.starttls()
-    server.login(login,senha)
+    server.login(login,password)
 
 
     #Construir o email tipo MIME

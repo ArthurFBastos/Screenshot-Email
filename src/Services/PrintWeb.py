@@ -32,4 +32,4 @@ def print_web(path):
     im = Image.open(path)
     im =im.crop((x1,y1,x2,y2))
     im.save(path)
-    im.show(path)
+    

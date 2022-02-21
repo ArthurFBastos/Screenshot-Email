@@ -8,7 +8,7 @@ import pybase64
 
 load_dotenv()
 
-def send_email3(path,date):
+def send_email(path,date):
     message = Mail(
     from_email=os.getenv("login"),
     to_emails=os.getenv("send_to"),

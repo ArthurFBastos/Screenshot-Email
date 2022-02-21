@@ -12,7 +12,7 @@ pip install pyautogui
 pip install pillow
 ```
 ```
-pip install smtlib
+pip install pybase64
 ```
 ```
 pip install dotenv
